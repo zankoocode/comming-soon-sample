@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Tinos';
+}
+@font-face{
+    font-family: 'fa-brands';
+    src: url('fa-brands-400.ttf') format('truetype');
+    font-family: 'Roboto';
+    src:  url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.green-back::before{
+ 
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #2a5555;
+    opacity: 0.7;
+}
+
+
+
+
+.sign-up-cta{
+    color: #fff;
+}
+
+.sign-up-cta h1{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.sign-up-cta p{
+    padding-top: 0.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.email-button-section{
+   margin-top: 2.5rem;
+}
+
+
+.btn-success{
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+
+.fa-twitter, .fa-facebook-f, .fa-instagram{
+    color: #fff;
+    background-color: black;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    clip-path: circle(50%);
+}
+.fa-facebook-f{
+    padding: 1.8rem 2rem;
+}
+
+
+
+/* breakpoint for laptop and desktop */
+@media only screen and (min-width: 1000px){
+    .video-back video{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%); /* related to top and left positioning */
+        
+    }
+
+    .sign-up-section::before{
+        transform: skewX(-17deg);
+        transform-origin: top right;
+}
+
+.sign-up-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 75vw;
+    background-color: rgba(0, 0, 0, 1);
+}
+    .sign-up-cta{
+    position: absolute;
+    top: 11rem;
+    left: 11rem;
+    width: 35vw;
+    }
+    .sign-up-cta h1{
+        font-size: 4rem;
+    }
+    .sign-up-cta p{
+        font-size: 1.2rem;
+    }
+
+    .email{
+        width: 25vw;
+        height: 8vh;
+        border-radius: 0.3rem;
+        padding-left: 1rem;
+    }
+    .btn-success{
+        width: 8vw;
+    }
+
+    .social-icons{
+        position: absolute;
+        top: 17rem;
+        left: 88rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* breakpoint for tablet */
+@media only screen and (min-width: 700px) and (max-width: 1000px){
+    .video-back video{
+        position: fixed;
+        top: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+
+    }
+    .sign-up-section::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 50vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .sign-up-cta{
+        position: absolute;
+        top: 5rem;
+        left: 7rem;
+        width: 75vw;
+        color: #fff;
+        }
+
+        .sign-up-cta h1{
+            font-size: 2.5rem;
+        }
+        .sign-up-cta p{
+            font-size: 1.2rem;
+        }
+
+        .email{
+            width: 60vw;
+            height: 8vh;
+            border-radius: 0.3rem;
+            padding-left: 1rem;
+        }
+        .social-icons{
+            position: absolute;
+            top: 25em;
+            left: 17rem;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .fa-twitter, .fa-facebook-f, .fa-instagram{
+           margin-right: 3rem;
+        }
+        
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 600px){
+    .video-back video{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        top: 40%;
+        height: auto;
+
+    }
+    .sign-up-section::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        min-width: 550px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .sign-up-cta{
+        position: absolute;
+        top: 8rem;
+        left: 3rem;
+        width: 100vw;
+        color: #fff;
+        }
+
+        .sign-up-cta h1{
+            font-size: 2.5rem;
+        }
+        .sign-up-cta p{
+            font-size: 1.2rem;
+        }
+
+        .email{
+            width: 60vw;
+            height: 8vh;
+            border-radius: 0.3rem;
+            padding-left: 1rem;
+        }
+        .social-icons{
+            position: absolute;
+            top: 35rem;
+            left: 5rem;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .fa-twitter, .fa-facebook-f, .fa-instagram{
+           margin-right: 3rem;
+        }
+        
+}
